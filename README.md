@@ -5,8 +5,7 @@ This is the repo of Dog breed classifier project in Udacity ML Nanodegree.
 <p align="justify">The problem is to identify the breed of dog, if dog image is given as input, if supplied an image of a human, we have to identify the resembling dog breed. The idea is to build a pipeline that can process real world user supplied images and identify an estimate of the canine’s breed. This is a multi-class classification problem where we can use supervised machine learning to solve this problem. </p>
 
 ## Solution
-<p align="justify">For performing this multiclass classification, we can use **Convolutional Neural
-Network** to solve the problem. A Convolutional Neural Network (CNN) is a Deep
+<p align="justify">For performing this multiclass classification, we can use ** Convolutional Neural Network ** to solve the problem. A Convolutional Neural Network (CNN) is a Deep
 Learning algorithm which can take in an input image, assign importance (learnable
 weights and biases) to various aspects/objects in the image and be able to
 differentiate one from the other. The solution involves three steps. First, to detect
@@ -28,7 +27,7 @@ fully connected layers that finally produces 133-dimensional output. A dropout o
 ## Refinement - CNN model created with transfer learning
 <p align="justify">The CNN created from scratch have accuracy of 13%, Though it meets the
 benchmarking, the model can be significantly improved by using transfer learning.
-To create **CNN with transfer learning**, I have selected the **Resnet101 architecture**
+To create ** CNN with transfer learning **, I have selected the ** Resnet101 architecture **
 which is pre-trained on ImageNet dataset, the architecture is 101 layers deep. The
 last convolutional output of Resnet101 is fed as input to our model. We only need
 to add a fully connected layer to produce 133-dimensional output (one for each
