@@ -2,18 +2,12 @@
 This is the repo of Dog breed classifier project in Udacity ML Nanodegree. 
 
 ## Project Overview
-<p align="justify">The problem is to identify the breed of dog, if dog image is given as input, if supplied an image of a human, we have to identify the resembling dog breed. The idea is to build a pipeline that can process real world user supplied images and identify an estimate of the canine’s breed. This is a multi-class classification problem where we can use supervised machine learning to solve this problem. </p>
-
-## Solution
-<p align="justify">For performing this multiclass classification, we can use <b>Convolutional Neural Network</b> to solve the problem. A Convolutional Neural Network (CNN) is a Deep
-Learning algorithm which can take in an input image, assign importance (learnable
-weights and biases) to various aspects/objects in the image and be able to
-differentiate one from the other. The solution involves three steps. First, to detect
+<p align="justify">The project goal is to identify the breed of dog, if dog image is given as input, if supplied an image of a human, we have to identify the resembling dog breed. The idea is to build a pipeline that can process real world user supplied images and identify an estimate of the canine’s breed. For performing this multiclass classification, we can use <b>Convolutional Neural Network</b> to solve the problem.The solution involves three steps. First, to detect
 human images, we can use existing algorithm like OpenCV’s implementation of
 Haar feature based cascade classifiers. Second, to detect dog-images we will use a
 pretrained VGG16 model. Finally, after the image is identified as dog/human, we
 can pass this image to an CNN model which will process the image and predict the
-breed that matches the best out of 133 breeds.</p>
+breed that matches the best out of 133 breeds. </p>
 
 ## CNN model created from scratch
 <p align="justify">I have built a CNN model from scratch to solve the problem. The model has 3
