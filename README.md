@@ -38,6 +38,8 @@ to add a fully connected layer to produce 133-dimensional output (one for each
 dog category). The model performed extremely well when compared to CNN from
 scratch. With just 5 epochs, the model got 81% accuracy.
 
+![Sample output](./sample_output.png) 
+
 ## Model Evaluation
 The CNN model created using transfer learning with
 ResNet101 architecture was trained for 5 epochs, and the final model produced an
