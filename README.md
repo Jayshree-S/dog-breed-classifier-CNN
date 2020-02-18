@@ -7,9 +7,9 @@ The goal of the project is to build a machine learning model that can be used wi
 web app to process real-world, user-supplied images. The algorithm has to perform
 two tasks:
 <ul>
-<li>Dog face detector: Given an image of a dog, the algorithm will identify an estimate
+<li>Given an image of a dog, the algorithm will identify an estimate
 of the canine’s breed.</li>
-<li>Human face detector: If supplied an image of a human, the code will identify the
+<li>If supplied an image of a human, the code will identify the
 resembling dog breed.</li>
 </ul>
 For performing this multiclass classification, we can use <b>Convolutional Neural Network</b> to solve the problem.The solution involves three steps. First, to detect
