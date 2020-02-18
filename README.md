@@ -2,10 +2,7 @@
 This is the repo of Dog breed classifier project in Udacity ML Nanodegree. 
 
 ## Project Overview
-The problem is to identify the breed of dog, if dog image is given as input, if supplied an image of a human, we have to identify the resembling dog breed. The idea is to build a pipeline that can process real world user supplied images and identify an estimate of the canine’s breed. This is a multi-class classification problem where we can use supervised machine learning to solve this problem.
-
-## Problem Statement
-The goal of the project is to build a machine learning model that can be used within web app to process real-world, user-supplied images. The algorithm has to perform two tasks: Dog face detector: Given an image of a dog, the algorithm will identify an estimate of the canine’s breed. Human face detector: If supplied an image of a human, the code will identify the resembling dog breed.
+The problem is to identify the breed of dog, if dog image is given as input, if supplied an image of a human, we have to identify the resembling dog breed. The idea is to build a pipeline that can process real world user supplied images and identify an estimate of the canine’s breed. This is a multi-class classification problem where we can use supervised machine learning to solve this problem. 
 
 ## Solution
 For performing this multiclass classification, we can use Convolutional Neural
@@ -28,7 +25,7 @@ pooling layer of (2,2) is used which will reduce the input size by 2. We have tw
 fully connected layers that finally produces 133-dimensional output. A dropout of
 0.25 is added to avoid over overfitting.
 
-## Project Improvement
+## Refinement - CNN model created with transfer learning
 The CNN created from scratch have accuracy of 13%, Though it meets the
 benchmarking, the model can be significantly improved by using transfer learning.
 To create **CNN with transfer learning**, I have selected the **Resnet101 architecture**
@@ -38,7 +35,7 @@ to add a fully connected layer to produce 133-dimensional output (one for each
 dog category). The model performed extremely well when compared to CNN from
 scratch. With just 5 epochs, the model got 81% accuracy.
 
-![Sample output](./sample_output.png) 
+![Sample output](./sample_output.PNG) 
 
 ## Model Evaluation
 The CNN model created using transfer learning with
