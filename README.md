@@ -2,7 +2,17 @@
 This is the repo of Dog breed classifier project in Udacity ML Nanodegree. 
 
 ### Project Overview
-<p align="justify">The project goal is to identify the breed of dog, if dog image is given as input, if supplied an image of a human, we have to identify the resembling dog breed. The idea is to build a pipeline that can process real world user supplied images and identify an estimate of the canine’s breed. For performing this multiclass classification, we can use <b>Convolutional Neural Network</b> to solve the problem.The solution involves three steps. First, to detect
+<p align="justify">
+The goal of the project is to build a machine learning model that can be used within
+web app to process real-world, user-supplied images. The algorithm has to perform
+two tasks:
+<ul>
+<li>Dog face detector: Given an image of a dog, the algorithm will identify an estimate
+of the canine’s breed.</li>
+<li>Human face detector: If supplied an image of a human, the code will identify the
+resembling dog breed.</li>
+</ul>
+For performing this multiclass classification, we can use <b>Convolutional Neural Network</b> to solve the problem.The solution involves three steps. First, to detect
 human images, we can use existing algorithm like OpenCV’s implementation of
 Haar feature based cascade classifiers. Second, to detect dog-images we will use a
 pretrained VGG16 model. Finally, after the image is identified as dog/human, we
